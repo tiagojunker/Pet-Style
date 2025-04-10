@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Site Responsivo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Pet Style</div>
+    <nav>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#sobre">SOBRE</a></li>
+        <li><a href="#servicos">SERVIÇOS</a></li>
+        <li><a href="#adocao">ADOÇÃO</a></li>
+        <li><a href="#contatos">CONTATOS</a></li>
+      </ul>
+      <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section id="sobre" class="section primary">
+    <div class="content image-left">
+      <img src="assets/imagem1.png" alt="Sobre">
+      <div class="text">
+        <h2>Sobre Nós</h2>
+        <p>Nossa missão vai muito além de apenas cuidar — ela é sobre transformar vidas. Somos movidos pela paixão em proporcionar bem-estar, saúde e alegria para cada pet que cruza nosso caminho. Com uma equipe especializada e um ambiente acolhedor, oferecemos mais do que serviços: entregamos amor, confiança e dedicação em cada atendimento. Venha fazer parte da nossa história e descubra como é fazer parte de uma família que realmente se importa com o seu melhor amigo.</p>
+        <button>Saiba Mais</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos" class="section secondary">
+    <div class="content image-right">
+      <div class="text">
+        <h2>Nossos Serviços</h2>
+        <p>Oferecemos uma gama de serviços voltados ao cuidado, saúde e bem-estar animal. Desde banho e tosa personalizados, consultas veterinárias, vacinação, até hospedagem e creche para seu pet. Cada serviço é realizado com o mais alto padrão de qualidade, por profissionais qualificados que amam o que fazem. Aqui, seu animalzinho recebe o carinho e atenção que merece.</p>
+        <button>Ver Serviços</button>
+      </div>
+      <img src="assets/imagem2.png" alt="Serviços">
+    </div>
+  </section>
+
+  <section id="adocao" class="section primary">
+    <div class="content image-left">
+      <img src="assets/imagem3.png" alt="Adoção">
+      <div class="text">
+        <h2>Adoção</h2>
+        <p>Adotar é um ato de amor que transforma duas vidas: a do animal e a sua. Aqui na Pet Style, acreditamos que todo bichinho merece um lar cheio de carinho. Por isso, apoiamos e promovemos a adoção responsável. Conheça os pets que estão esperando por uma nova chance e permita-se viver essa experiência única e gratificante.</p>
+        <button>Adotar Agora</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="contatos" class="section secondary">
+    <div class="content image-right">
+      <div class="text">
+        <h2>Contatos</h2>
+        <p>Quer saber mais, tirar dúvidas ou fazer parte dessa causa? Entre em contato conosco! Nossa equipe está sempre pronta para atender você com atenção e carinho. Siga-nos também nas redes sociais e acompanhe de perto todas as novidades, eventos e histórias inspiradoras do mundo pet.</p>
+        <button>Entrar em Contato</button>
+      </div>
+      <img src="assets/imagem4.png" alt="Contatos">
+    </div>
+  </section>
+
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-links');
+
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
